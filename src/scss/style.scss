@@ -5,6 +5,37 @@ body {
   font-family: "Oxygen", sans-serif;
 }
 
+.collapse > ul {
+  margin-top: 10px;
+}
+
+.nav > li {
+  a {
+    color: #951c49;
+    text-align: center;
+  }
+  a:hover {
+    background: #e7e7e7;
+  }
+  a span {
+    font-size: 1.8em;
+  }
+  &:last-child {
+    // phonenumber
+    margin-top: 5px;
+    a {
+      text-align: right;
+      padding-bottom: 0;
+    }
+    // we deliver
+    div {
+      color: #557c3e;
+      text-align: right;
+      padding-right: 15px;
+    }
+  }
+}
+
 .navbar {
   background-color: #f6b319;
   border-radius: 0;
