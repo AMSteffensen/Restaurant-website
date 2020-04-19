@@ -6,7 +6,13 @@ body {
 }
 
 .collapse > ul {
-  margin-top: 10px;
+  ul {
+    margin-top: 10px;
+  }
+  a {
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
 }
 
 .nav > li {
@@ -72,11 +78,123 @@ body {
       vertical-align: middle;
     }
   }
+}
 
-  &-image {
+.navbar-header {
+  button.navbar-toggle {
+    .icon-bar {
+      border: 1px solid #61122f;
+    }
+    clear: both;
+    margin-top: -30px;
+  }
+
+  &__image {
     background: url("../images/restaurant-logo.png") no-repeat;
     width: 150px;
     height: 150px;
     margin: 10px 15px 10px 0;
+  }
+}
+
+/* END HEADER */
+.container {
+  .jumbotron {
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+  }
+}
+/* Large Devices */
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url("../images/jumbotron_1200.jpg") no-repeat;
+    height: 675px;
+  }
+}
+
+/* Medium Devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-header {
+    &__image {
+      background: url("../images/restaurant-logo_medium.png") no-repeat;
+      width: 100px;
+      height: 100px;
+      margin: 5px 5px 5px 0;
+    }
+  }
+
+  .container .jumbotron {
+    background: url("../images/jumbotron_992.jpg") no-repeat;
+    height: 558px;
+  }
+}
+
+/* Small Devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-header {
+    &__image {
+      background: url("../images/restaurant-logo_small.png.png") no-repeat;
+      width: 50px;
+      height: 50px;
+      margin: 5px 5px 5px 0;
+    }
+  }
+
+  .container .jumbotron {
+    background: url("../images/jumbotron_768.jpg") no-repeat;
+    height: 432px;
+  }
+}
+
+/* Extra small Devices */
+@media (max-width: 767px) {
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  h1 {
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 0.6em;
+    margin-top: 12px;
+  }
+
+  p img {
+    height: 20px;
+  }
+
+  .call-btn {
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 5px;
+    font-size: 0.7em;
+    a {
+      font-size: 1.5em;
+      display: block;
+      margin: 0 20px;
+      padding: 10px;
+      border: 2px solid #fff;
+      background-color: #f6b319;
+      color: #951c49;
+    }
+
+    &-number {
+      margin-top: 5px;
+      font-size: 0.7em;
+    }
+
+    &-text {
+      margin-top: 5px;
+      font-size: 0.7em;
+    }
+  }
+
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
   }
 }
